@@ -10,12 +10,6 @@ import orderRoutes from './routes/OrderRoutes.js'
 
 const app = express()
 
-app.use(session({
-    secret: 'your-secret-key',
-    resave: false,
-    saveUninitialized: false
-  }))
-
 const corsOption = {
   origin: "http://localhost:3000",
   credentials: true,
